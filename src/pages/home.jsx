@@ -226,7 +226,7 @@ const Home = () => {
                 const data = response.data;
                 setIpInfo({
                     ip: data.ip || 'Unknown',
-                    country: data.country_code || 'Unknown'
+                    country: data.country_code || 'Unknown',
                     city: data.city || 'Unknown'
                 });
                 localStorage.setItem('ipInfo', JSON.stringify(data));
